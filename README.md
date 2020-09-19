@@ -1,2 +1,2 @@
-# KTM
+# ITC
  Intrumentos Tradicionales coreanos
