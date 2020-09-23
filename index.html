@@ -1,130 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!--META-->
-        <meta charset="UTF-8">
-        <meta name="viewport"content="width-device-width, inicial-scale=1.0">
-        <title>ITC - Instrumentos tradicionales de la música coreana</title>
-        
-         <!--NORMALIZE-->
-         <link rel="stylesheet" href="assets/styles/normalize.css" />
-         <!--STYLES-->
-        <link rel="stylesheet" href="assets/styles/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
-<header>
-<div class="navbar">
-    <ul class="navbar__list">
-        <li class="navbar__item"><a href="index.html#inicio" class="nav__link"></a>INICIO</li>
-        <li class="navbar__item"><a href="index.html#proyecto" class="nav__link"></a>PROYECTO</li>
-        <li class="navbar__item"><a href="index.html#instrumentos" class="nav__link"></a>INSTRUMENTOS</li>
-        <li class="navbar__item"><a href="index.html#footer" class="nav__link"></a>CONOCE MÁS</li>
-    </ul>
-</div>
-<!--INICIO-->
-<div class="inicio" id="inicio"> 
-    <h1 class="header__title">ITC</h1>
-<p class="header__description">Instrumentos tradicionales de Corea</div>
-</header>
-<!--PROYECTO-->
-<main>
-    <div class="project" id="proyecto">
-     <h1 class="project__title"> KTM</h1>
-     <p class="project__description"> 
-        Los instrumentos tradicionales coreanos empiezan a desarrollarse a partir del siglo IV, 
-algunos de ellos por intercambios culturales con los vecinos y otros 
-evolucionaron de manera independiente por eso, son considerados nativos de la Península.
-Se conocen aproximandamente sesenta instrumentos, de los cuales, solo veinte han sobrevivido el trascurrir del tiempo.
-Estos instrumentos tradicionales fueron un medio de expresión para los agricultores, en la música floclórica;
-pero pronto se volvieron indispensables en los ritos religiosos y artes escénicas.
-Es por ello, que el proyecto ITC busca la difusión de los sonidos que hoy son considerados un tesoro cultural de Corea. 
-     </p>
- </div>
- <!--INSTRUMENTOS-->
- <div class="instruments" id="instrumentos">
-     <ul class="grid">
-        <li class="grid__item">
-            <h3 class="instrument__name">Buk</h3>
-            <p class="instrument_description">Tambor tradicional coreano, hecho de cuero y madera, y tiene más de veinte versiones. Se toca con
-                 varas de madera. En muchas ocasiones lo podrán ver como acompañante del <em>Pansori</em>, donde se cantan historias.
-            </p>
-        <audio id="buk" controls preload="auto" src="assets/sounds/trackBuk.mp3" type="audio"></audio>
-        </li>
-         <li class="grid__item">
-             <h3 class="instrument__name">Gayageum</h3>
-             <img src="assets/img/"
-             <p class="instrument__description">Cítara de Gaya, consta de doce cuerdas y un puente móvil llamado <em>anjok</em>,
-                  mide 1,60 por 30 cm y se toca con ambas manos. Esta fue creada en el siglo VI, durante Confederación de Gaya,
-                 y es uno de los instrumentos tradicionales más conocidos.  
-             </p>
-         <audio id="gayageum" controls  preload="auto" src="assets/sounds/trackGayageum.mp3" type="audio"></audio>
-         </li>
-         <li class="grid__item">
-            <h3 class="instrument__name">Geomungo</h3>
-            <p class="instrument__description">Cítara de Goguryeo, pues se origina durante este reino (37A.C.-668). Este instrumento mide 160 por 23 cm,
-                 tradicionalmente se compone de seis cuerdas de seda y 16 trastes. Se toca con una vara de bambú llamada <em>suldae</em> en la mano derecha, 
-                con la cual se pulsan las cuerdas, mientras la mano izquierda se controla la vibración. </p>
-        <audio id="geomungo" controls preload="auto" src="assets/sounds/trackGeomungo.mp3" type="audio"></audio>
-        </li>
-        <li class="grid__item">
-            <h3 class="instrument__name">Ajaeng</h3>
-            <p class="instrument__description">Cítara de siete cuerdas y siete puentes. Se toca con un arco de madera. Se origina 
-                durante el reino de Goryeo (918-1392). Se usaba para interpretar música cortesana.
-            </p>
-        <audio id="ajaeng" controls preload="auto" src="assets/sounds/trackAjaeng.mp3" type="audio"></audio>
-        </li>
-        <li class="grid__item">
-            <h3 class="instrument__name">Hyang Bipa</h3>
-            <p class="instrument__description">Laúd de cinco cuerdas, el instrumento tiene forma de lágrima. Por ser un instrumento con 
-                una técnica de interpretación compleja, en el siglo XX dejó de tocarse y hoy se encuentra en los museos.
-            </p>
-        <audio id="hyangbipa" controls preload="auto" src="assets/sounds/trackHyangBipa.mp3" type="audio"></audio>
-        </li>
-        <li class="grid__item">
-            <h3 class="instrument__name">Hyang Piri</h3>
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, inicial-scale=1.0">
+    <title>ITC - Instrumentos tradicionales de la música coreana</title>
+    <link rel="icon" type="image/" sizes="32x32" href="assets/img/drum.png">
 
-            <p class="instrument__description">Flauta de doble lengüeta, mide 27 cm, y con ella se interpreta tanto música cortesana como popular.
-                 Es una estructura de bambú con ocho orificios. Se originó en Asia central y llegó a Corea a través de la Ruta de la Seda.
+
+    <!--NORMALIZE-->
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <!--STYLES-->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+    <!--TWITTER-->
+    <meta name="twitter:title" content="ITC - Intrumentos Tradionales Coreanos">
+    <meta name="twitter:description" content="Aprende sobre los instrumentos tradicionales de Corea y sus sonidos">
+    <meta name="twitter:image" content=" ">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo"> <img src="assets/img/drum (1).png" alt="logo"></div>
+        <div class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="index.html#inicio" class="nav__link"></a>INICIO</li>
+                <li class="navbar__item"><a href="index.html#proyecto" class="nav__link"></a>PROYECTO</li>
+                <li class="navbar__item"><a href="index.html#instrumentos" class="nav__link"></a>INSTRUMENTOS</li>
+                <li class="navbar__item"><a href="index.html#footer" class="nav__link"></a>CONOCE MÁS</li>
+            </ul>
+        </div>
+    </header>
+        <!--INICIO-->
+        <div class="inicio" id="inicio">
+            <h1 class="header__title">ITC</h1>
+        </div>
+    <!--PROYECTO-->
+    <main>
+        <div class="proyecto" id="proyecto">
+            <p class="project__description">
+                Los instrumentos tradicionales coreanos empiezan a desarrollarse a partir del siglo IV,
+                algunos de ellos por intercambios culturales con los vecinos y otros
+                evolucionaron de manera independiente por eso, son considerados nativos de la Península.
+                Se conocen aproximandamente sesenta instrumentos, de los cuales, solo veinte han sobrevivido el
+                trascurrir del tiempo.
+                Estos instrumentos tradicionales fueron un medio de expresión para los agricultores, en la música
+                floclórica;
+                pero pronto se volvieron indispensables en los ritos religiosos y artes escénicas.
+                Es por ello, que el proyecto ITC busca la difusión de los sonidos que hoy son considerados un tesoro
+                cultural de Corea.
             </p>
-        <audio id="hyangpiri" controls preload="auto" src="assets/sounds/trackHyangPiri.mp3" type="audio"></audio>
-        </li>
-        <li class="grid__item">
-            <h3 class="instrument__name">Janggo</h3>
-            <p class="instrument__description">Tambor con forma de reloj de arena, hecho de cuero y madera. Cada uno de sus dos extremos 
-                produce un sonido diferente. Este fue introducido a Corea desde la India duraante el reino de Silla (57 A.C.-935). Se puede interpretar
-            colocado en el suelo, o colgado en los hombros.</p>
-        <audio id="janggo" controls preload="auto" src="assets/sounds/trackJanggo.mp3" type="audio"></audio>
-        </li>
-     </ul>
- </div>
-</main>
-<!---footer-->
-<footer>
-    <section class="credits">
-    <h3 class="footer__title">Fuentes</h3>
-    <ul>
-        <li><a class='normal__link' href='http://www.gugak.go.kr/' target="_blank">National Gugak Center</a></li>
-        <li><a class='normal__link' href='https://freesound.org/people/ultradust/sounds/167382/' target="_blank">Andi
-                Roselund</a></li>
-        <li><a class='normal__link' href='https://www.youtube.com/watch?v=rqRv-Cxagv0' target="_blank">NocutView</a>
-        </li>
-        <li><a class='normal__link' href='https://www.youtube.com/watch?v=WHYVR4JDy60' target="_blank">YTN News</a>.
-        </li>
-    </ul>
-    </section>
-    <section class="learn__more">
-        <h3 class="footer__title">Conoce más</h3>
-        <ul>
-            <li><a class='normal__link' href='https://artsandculture.google.com/exhibit/TQLCWFVCGDVvKQ' target='_blank'>Google Arts and Culture</a></li>
-            <li><a class='normal__link' href='https://omeka-s.grinnell.edu/s/MusicalInstruments/musical-instrument-search?q=korean&limit%5Bdcterms_coverage_s%5D%5B0%5D=South%20Korea' target='_blank'>Grinnel College</a></li>
-            <li><a class='normal__link' href='https://en.wikipedia.org/wiki/Traditional_Korean_musical_instruments' target='_blank'>Wikipedia</a>.</li>
-        </ul>
-    </section>
-    <p class="coded__by">RAINVARE - Indira Valentina Réquiz</a></p>
-</footer>
- 
-<script type="text/javascript" src="assets/scripts/script.js"></script>
+        </div>
+        <!--INSTRUMENTOS-->
+        <div class="instrumentos" id="instrumentos">
+            <ul class="grid">
+                <li class="grid__item">
+                    <h3 class="instrument__name">Buk</h3>
+                    <img src="assets/img/buku.jpg">
+                    <p class="instrument_description">Tambor tradicional coreano, hecho de cuero y madera, y tiene más
+                        de veinte versiones. Se toca con
+                        varas de madera. En muchas ocasiones lo podrán ver como acompañante del <em>Pansori</em>, donde
+                        se cantan historias.
+                    </p>
+                    <audio id="buk" controls preload="auto" src="assets/sounds/trackBuk.mp3" type="audio"></audio>
+                </li>
+                <li class="grid__item">
+                    <h3 class="instrument__name">Gayageum</h3>
+                    <img src="assets/img/gayageum.jpg">
+                    <p class="instrument__description">Cítara de Gaya, consta de doce cuerdas y
+                        un puente móvil llamado <em>anjok</em>,
+                        mide 1,60 por 30 cm y se toca con ambas manos. Esta fue creada en el siglo VI, durante
+                        Confederación
+                        de Gaya,
+                        y es uno de los instrumentos tradicionales más conocidos. </p>
+                    <audio id="gayageum" controls preload="auto" src="assets/sounds/trackGayageum.mp3"
+                        type="audio"></audio>
+                </li>
+                <li class="grid__item">
+                    <h3 class="instrument__name">Geomungo</h3>
+                    <img src="assets/img/geomungo.gif">
+                    <p class="instrument__description">Cítara de Goguryeo, pues se origina durante este reino
+                        (37A.C.-668). Este instrumento mide 160 por 23 cm,
+                        tradicionalmente se compone de seis cuerdas de seda y 16 trastes. Se toca con una vara de bambú
+                        llamada <em>suldae</em> en la mano derecha,
+                        con la cual se pulsan las cuerdas, mientras la mano izquierda se controla la vibración. </p>
+                    <audio id="geomungo" controls preload="auto" src="assets/sounds/trackGeomungo.mp3"
+                        type="audio"></audio>
+                </li>
+                <li class="grid__item">
+                    <h3 class="instrument__name">Ajaeng</h3>
+                    <img src="assets/img/ajaeng.gif">
+                    <p class="instrument__description">Cítara de siete cuerdas y siete puentes. Se toca con un arco de
+                        madera. Se origina
+                        durante el reino de Goryeo (918-1392). Se usaba para interpretar música cortesana.
+                    </p>
+                    <audio id="ajaeng" controls preload="auto" src="assets/sounds/trackAjaeng.mp3" type="audio"></audio>
+                </li>
+                <li class="grid__item">
+                    <h3 class="instrument__name">Hyang Bipa</h3>
+                    <img src="assets/img/pipa.gif">
+                    <p class="instrument__description">Laúd de cinco cuerdas, el instrumento tiene forma de lágrima. Por
+                        ser un instrumento con
+                        una técnica de interpretación compleja, en el siglo XX dejó de tocarse y hoy se encuentra en los
+                        museos.
+                    </p>
+                    <audio id="hyangbipa" controls preload="auto" src="assets/sounds/trackHyangBipa.mp3"
+                        type="audio"></audio>
+                </li>
+                <li class="grid__item">
+                    <h3 class="instrument__name">Hyang Piri</h3>
+                    <img src="assets/img/piri.jpeg">
+                    <p class="instrument__description">Flauta de doble lengüeta, mide 27 cm, y con ella se interpreta
+                        tanto música cortesana como popular.
+                        Es una estructura de bambú con ocho orificios. Se originó en Asia central y llegó a Corea a
+                        través de la Ruta de la Seda.
+                    </p>
+                    <audio id="hyangpiri" controls preload="auto" src="assets/sounds/trackHyangPiri.mp3"
+                        type="audio"></audio>
+                </li>
+                <li class="grid__item">
+                    <h3 class="instrument__name">Janggo</h3>
+                    <img src="assets/img/chango.gif">
+                    <p class="instrument__description">Tambor con forma de reloj de arena, hecho de cuero y madera. Cada
+                        uno de sus dos extremos
+                        produce un sonido diferente. Este fue introducido a Corea desde la India duraante el reino de
+                        Silla (57 A.C.-935). Se puede interpretar
+                        colocado en el suelo, o colgado en los hombros.</p>
+                    <audio id="janggo" controls preload="auto" src="assets/sounds/trackJanggo.mp3" type="audio"></audio>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!---footer-->
+    <footer id="footer" class="footer">
+        <section class="creditos">
+            <h3 class="footer__title">Fuentes</h3>
+            <ul>
+                <li><a class='normal__link' href='http://www.gugak.go.kr/' target="_blank">National Gugak Center</a>
+                </li>
+                <li><a class='normal__link' href='https://freesound.org/people/ultradust/sounds/167382/'
+                        target="_blank">Andi
+                        Roselund</a></li>
+                <li><a class='normal__link' href='https://www.youtube.com/watch?v=rqRv-Cxagv0'
+                        target="_blank">NocutView</a>
+                </li>
+                <li><a class='normal__link' href='https://www.youtube.com/watch?v=WHYVR4JDy60' target="_blank">YTN
+                        News</a>.
+                </li>
+            </ul>
+        </section>
+        <section class="conoce__mas">
+            <h3 class="footer__title">Conoce más</h3>
+            <ul>
+                <li><a class='normal__link' href='https://artsandculture.google.com/exhibit/TQLCWFVCGDVvKQ'
+                        target='_blank'>Google Arts and Culture</a></li>
+                <li><a class='normal__link'
+                        href='https://omeka-s.grinnell.edu/s/MusicalInstruments/musical-instrument-search?q=korean&limit%5Bdcterms_coverage_s%5D%5B0%5D=South%20Korea'
+                        target='_blank'>Grinnel College</a></li>
+                <li><a class='normal__link' href='https://en.wikipedia.org/wiki/Traditional_Korean_musical_instruments'
+                        target='_blank'>Wikipedia</a>.</li>
+            </ul>
+        </section>
+        <p class="coded__by">RAINVARE - Indira Valentina Réquiz</a></p>
+    </footer>
+
+    <script type="text/javascript" src="assets/scripts/script.js"></script>
 </body>
+
 </html>
