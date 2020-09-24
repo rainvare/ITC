@@ -1,14 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
-*{
+*, *::before, *::after{
     box-sizing: border-box;
+
 }
-body{
-    font-family: 'Inconsolata', monospace;  
-    display: flex;
+:root {
+    --ff-primary: 'Inconsolata', monospace;
+    --ff-secondary: 'Monserrat', sans-serif
+
+    --fw-reg: 300;
+    --fw-bold: 500;
+
+    --clr-light: #fff;
+    --clr-dark: #5777ec;
+    --clr-accent: #ff6363;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+--bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+    @media (min-width: 800px) {
+        :root {
+            --fs-h1: 4.5rem;
+            --fs-h2: 3.75rem;
+            --fs-h3: 1.5rem;
+            --fs-body: 1.125rem;
+        }
+    }
 }
 header{
-    position: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
     max-width: 100%;
-    flex-direction: wrap;
-    background-color: azure;
+    display: flex;
+    height: 10%;
+    background-color: var(--clr-light);
+    align-content: space-around;
+  }
+  .logo{
+      width: 100px;
+  }
+  .navbar{
+ color:var(--clr-dark);
   }
