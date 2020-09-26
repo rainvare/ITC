@@ -16,11 +16,17 @@ body{
 }
 
 header{
-    margin: 0;
-    padding: 0;
-    max-width:100%; 
-    background: var(--clr-light);
-    color:var(--clr-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  padding: 0 2em;
+  max-width:100%; 
+  background: var(--clr-light);
+  color:var(--clr-dark);
     
   }
 .logo{
@@ -29,6 +35,31 @@ header{
     margin: 0px 0px 0px 30px;
     padding: 0;
   }
-.navbar__item{
+  a, li{
     text-decoration: none;
   }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+h3 {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+}
+.navbar{
+display: flex;
+flex-direction: row;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 70px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+background: #fff;
+z-index: 10;
+&--top {
+    position: fixed;
+    top: 0;
+}
+}
