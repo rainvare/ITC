@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 *, *::before, *::after{
     box-sizing: border-box;
-    margin:0;
-    padding: 0;
-    background-color: #fff;
-    font-family: 'Inconsolata', monospace;
-    scroll-behavior: smooth;
 }
 :root {
 
@@ -13,10 +8,14 @@
     --clr-dark: #5777ec;
     --clr-accent: #ff6363;
 }
+html{
+  margin:0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+  scroll-behavior: smooth;
+}
 li a{
-  text-decoration: none;
-  font-size: 16px;
-  list-style: none;
+  font-size: 18px
 }
 header{
   display: flex;
@@ -75,6 +74,7 @@ header{
 }
 .proyecto p{
   background: none;
+  font-size: 18px;
   color: var(--clr-light);
   line-height: 30px;
 }
@@ -119,15 +119,25 @@ filter: grayscale(100%);
 }
 footer{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   background-color: var(--clr-accent);
-  color: var(--clr-light);
-  font-weight: 40px;
+  color:#454545;
+  
 }
 footer div{
   width: 95%;
   margin: auto;
   padding: 10px 10px;
-  text-decoration: none;
+}
+footer h3 {
+  font-size: 25px; 
+  font-weight: 20px;
+}
+footer li{
   list-style: none;
+}
+footer div li a, div p a {
+  text-decoration: none;
+  color: var(--clr-light);
 }
