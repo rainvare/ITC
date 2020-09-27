@@ -5,6 +5,7 @@
     padding: 0;
     background-color: #fff;
     font-family: 'Inconsolata', monospace;
+    scroll-behavior: smooth;
 }
 :root {
 
@@ -41,10 +42,10 @@ header{
  }
 .inicio{
   max-width: 100%;
-  height: 400px;
+  height: 500px;
   display: flex;
   align-content: center;
-  margin: 0;
+  margin: 0px 0px 100px 0px;
   padding:30px;
   background-image: url(../img/bg_alexandre-trouve-fJ7Tw55FrE4-unsplash.jpg);
   background-attachment: fixed;
@@ -57,3 +58,46 @@ header{
   font-size: 48px;
   color: var(--clr-light)
 }
+.proyecto{
+  flex-direction: column;
+  margin: 40px 0px 0px 0px;
+  padding: 30px;
+  max-width: 100%;
+  text-align: justify;
+  background-color: var(--clr-dark);
+}
+.proyecto h1 {
+  background: none;
+  color: var(--clr-light);
+  font-weight: 500px;
+ font-size: 30px;
+ text-align: center;
+}
+.proyecto p{
+  background: none;
+  color: var(--clr-light);
+  line-height: 30px;
+}
+.instrumentos{
+  margin: 40px 0px 0px 0px;
+  padding: 30px;
+  max-width: 100%;
+  align-content: space-between;
+  
+}
+.instrumentos h2{
+  background: none;
+  padding: 40px;
+  color: var(--clr-accent);
+  font-weight: 500px;
+ font-size: 30px;
+ text-align: center;
+}
+.instrumentos li{
+  list-style: none;
+}
+.instrumentos ul{
+  grid-area: auto;
+  text-align: center;
+}
+
