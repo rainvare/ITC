@@ -48,10 +48,20 @@ header{
   padding:30px;
   background-image: url(../img/bg_alexandre-trouve-fJ7Tw55FrE4-unsplash.jpg);
   background-attachment: fixed;
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; 
 }
+@media (max-width: 480px){
+  .inicio{
+    background-image: url(../img/bg-mobile.jpg);
+    background-size: 100%;
+    background-attachment: scroll;
+}
+.inicio h1{
+  color: var(--clr-dark);
+}
+  }
+  
 .inicio h1{
   background: none;
   font-size: 48px;
