@@ -82,7 +82,8 @@ header{
   margin: 40px 0px 0px 0px;
   padding: 30px;
   max-width: 100%;
-  align-content: space-between;
+  align-content: space-around;
+  background-color: var(--clr-light);
   
 }
 .instrumentos h2{
@@ -93,11 +94,40 @@ header{
  font-size: 30px;
  text-align: center;
 }
+
+.instrumentos ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 7fr));
+  margin: 0;
+}
 .instrumentos li{
   list-style: none;
-}
-.instrumentos ul{
-  grid-area: auto;
-  text-align: center;
-}
+}  
 
+.instrumentos ul li img{
+height: 1fr;
+max-width: 100%;
+padding: 2em;
+filter: grayscale(100%);
+}
+.instrumentos ul li h3{
+  color: var(--clr-accent);
+  font-size: 25px;
+}
+.instrumentos ul li p{
+  padding: 2em;
+}
+footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+  font-weight: 40px;
+}
+footer div{
+  width: 95%;
+  margin: auto;
+  padding: 10px 10px;
+  text-decoration: none;
+  list-style: none;
+}
