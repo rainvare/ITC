@@ -65,7 +65,7 @@ header{
 .inicio h1{
   background: none;
   font-size: 48px;
-  color: var(--clr-light)
+  color: var(--clr-dark)
 }
 .proyecto{
   flex-direction: column;
