@@ -48,6 +48,7 @@ header{
   padding:30px;
   background-image: url(../img/bg_alexandre-trouve-fJ7Tw55FrE4-unsplash.jpg);
   background-attachment: fixed;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; 
 }  
