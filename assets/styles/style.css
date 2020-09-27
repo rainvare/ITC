@@ -116,6 +116,7 @@ filter: grayscale(100%);
 }
 .instrumentos ul li p{
   padding: 2em;
+  text-align: justify;
 }
 footer{
   display: grid;
