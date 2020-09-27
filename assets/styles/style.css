@@ -51,7 +51,7 @@ header{
   background-repeat: no-repeat;
   background-position: center; 
 }
-@media (max-device-width : 768px){
+@media (max-width : 780px){
   .inicio{
     background-image: url(../img/bg-mobile.jpg);
     background-size: 100%;
